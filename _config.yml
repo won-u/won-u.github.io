@@ -23,7 +23,7 @@ timezone: Asia/Seoul
 
 title: Wonu's blog                          # the main title
 
-tagline: A text-focused Jekyll theme   # it will display as the sub-title
+tagline: 개발이 하고 싶어요...   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Devloper, Engineer, 개발, 개발자, cpp, c++, python
@@ -73,7 +73,7 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode:    # [light|dark]
+theme_mode: dark    # [light|dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
@@ -83,7 +83,7 @@ theme_mode:    # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: /assets/img/wonu_avatar.jpg
 
 # boolean type, the global switch for ToC in posts.
 toc: true
@@ -123,6 +123,7 @@ paginate: 10
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
+  input: GFM
   syntax_highlighter: rouge
   syntax_highlighter_opts:   # Rouge Options › https://github.com/jneen/rouge#full-options
     css_class: highlight
