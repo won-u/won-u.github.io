@@ -278,7 +278,7 @@ Blah blah ~
 ---------------------------------------
 ```
 ---
-* * *
+* * *`
 
 ***
 
@@ -287,7 +287,20 @@ Blah blah ~
 - - -
 
 ---------------------------------------
+## Github emoji
+---
+```
+GitHub supports emoji!   
+:+1: :sparkles: :camel: :tada:   
+:rocket: :metal: :octocat:  
+:smiley: 
+```
+GitHub supports emoji!   
+:+1: :sparkles: :camel: :tada:   
+:rocket: :metal: :octocat:  
+:smiley: 
 
+---
 # 참고
 >-- <https://post.naver.com/viewer/postView.nhn?volumeNo=24627214&memberNo=42458017>   
 >-- <https://gist.github.com/ihoneymon/652be052a0727ad59601>
