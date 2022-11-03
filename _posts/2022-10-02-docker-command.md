@@ -1,10 +1,12 @@
 ---
 layout: post
-title: '[Docker] docker 명령어'
+title: '[Docker] Docker 명령어'
 comments: true
 categories: [Docker]
-tags: [docker, tutorial, command]
+tags: [docker]
 ---
+
+<img data-action="zoom" src="https://won-u.github.io/assets/img/post_image/docker.png" width="70%" height="70%" title="Docker">
 
 ## 사용하기
 
@@ -205,4 +207,27 @@ sudo docker cp hello_world:/data/file/test.sh /home/${USER}/copy
 ```
 
 `docker cp <컨테이너 이름>:<경로> <호스트 경로>` 형식입니다.
+
+## 컨테이너 실행 명령
+
+```bash
+sudo docker exec ${container_name} ${command}
+
+e.g.)
+sudo docker exec -it test-image /bin/bash
+```
+
+`docker exec <옵션> <컨테이너 이름> <커맨드> <ARGUMENTS>` 형식입니다.
+
+## 컨테이너 로그 확인
+
+```bash
+sudo docker logs ${container_name}
+
+e.g.)
+sudo docker logs test-image
+sudo docker logs -f test-image
+```
+
+`docker logs <옵션> <컨테이너 이름>` 형식입니다.
 

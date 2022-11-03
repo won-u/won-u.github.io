@@ -3,7 +3,7 @@ layout: post
 title: '[Yocto] Yocto variable glossary (사용 빈도수 높은것만)'
 comments: true
 categories: [Yocto]
-tags: [yocto, programming, tutorial]
+tags: [yocto, embedded, programming]
 ---
 ## ALLOW_EMPTY
 
@@ -204,7 +204,7 @@ INHERIT:append = " extrausers"
 EXTRA_IMAGE_FEATURES:append = " \
     allow-empty-password \
 "
-# User account has been included in the adm group. this is to allow access to files in /var/log
+
 EXTRA_USERS_PARAMS:append = " \
     useradd -d /home/${@d.getVar('USER_ACCOUNT')} -p '' ${@d.getVar('USER_ACCOUNT')}; \
     usermod -s /bin/sh -aG adm ${@d.getVar('USER_ACCOUNT')}; \
@@ -873,4 +873,4 @@ ${TMPDIR}/work/${MULTIMACH_TARGET_SYS}/${PN}/${EXTENDPE}${PV}-${PR}
 
 ```bash
 poky/build/tmp/work/qemux86-poky-linux/foo/1.3.0-r0
-```%    
+```

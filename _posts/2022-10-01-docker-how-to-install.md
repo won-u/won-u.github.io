@@ -1,13 +1,12 @@
 ---
 layout: post
-title: '[Docker] docker 설치 방법'
+title: '[Docker] Docker 설치 방법'
 comments: true
 categories: [Docker]
-tags: [docker, tutorial, install]
+tags: [docker]
 ---
 
-![Docker](https://won-u.github.io/assets/img/favicons/android-chrome-192x192.png) 
-<!-- <a href="#이미지"><img src="https://won-u.github.io/assets/img/favicons/android-chrome-192x192.png" width="40%" height="30%" title="px 설정2" alt="ant_image2"></a> -->
+<img data-action="zoom" src="https://won-u.github.io/assets/img/post_image/docker.png" width="70%" height="70%" title="Docker">
 
 ## 설치 스크립트를 통한 설치
 
@@ -36,3 +35,8 @@ sudo service docker start
 sudo chkconfig docker on
 ```
 
+docker 사용 권한
+
+```bash
+sudo usermod -aG docker $USER
+```
